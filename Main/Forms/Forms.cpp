@@ -1074,7 +1074,7 @@ FavoriteVolumesDialogBase::FavoriteVolumesDialogBase( wxWindow* parent, wxWindow
 	bSizer58->Add( gSizer5, 0, wxEXPAND|wxRIGHT|wxLEFT, 5 );
 	
 	wxFlexGridSizer* fgSizer4;
-	fgSizer4 = new wxFlexGridSizer( 1, 5, 0, 0 );
+	fgSizer4 = new wxFlexGridSizer(1, 5, 0, 0);
 	fgSizer4->AddGrowableCol( 2 );
 	fgSizer4->SetFlexibleDirection( wxBOTH );
 	fgSizer4->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
@@ -1178,7 +1178,7 @@ KeyfilesDialogBase::KeyfilesDialogBase( wxWindow* parent, wxWindowID id, const w
 	bSizer23->Add( KeyfilesNoteSizer, 1, wxEXPAND, 5 );
 	
 	wxFlexGridSizer* fgSizer2;
-	fgSizer2 = new wxFlexGridSizer( 1, 2, 0, 0 );
+	fgSizer2 = new wxFlexGridSizer(1, 2, 0, 0);
 	fgSizer2->AddGrowableCol( 0 );
 	fgSizer2->SetFlexibleDirection( wxBOTH );
 	fgSizer2->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
@@ -1441,8 +1441,8 @@ MountOptionsDialogBase::MountOptionsDialogBase( wxWindow* parent, wxWindowID id,
 	
 	bSizer54->Add( bSizer55, 1, wxEXPAND, 5 );
 	
-	FilesystemOptionsSizer = new wxGridBagSizer( 0, 0 );
-	FilesystemOptionsSizer->AddGrowableCol( 1 );
+	FilesystemOptionsSizer = new wxGridBagSizer(0, 0);
+	FilesystemOptionsSizer->AddGrowableCol( 0 );
 	FilesystemOptionsSizer->SetFlexibleDirection( wxBOTH );
 	FilesystemOptionsSizer->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	FilesystemOptionsSizer->SetEmptyCellSize( wxSize( 0,0 ) );
@@ -1698,7 +1698,7 @@ PreferencesDialogBase::PreferencesDialogBase( wxWindow* parent, wxWindowID id, c
 	
 	wxFlexGridSizer* fgSizer3;
 	fgSizer3 = new wxFlexGridSizer( 1, 2, 0, 0 );
-	fgSizer3->AddGrowableCol( 1 );
+	fgSizer3->AddGrowableCol(1);
 	fgSizer3->SetFlexibleDirection( wxBOTH );
 	fgSizer3->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
