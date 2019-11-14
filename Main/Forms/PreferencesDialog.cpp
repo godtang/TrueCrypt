@@ -154,7 +154,7 @@ namespace TrueCrypt
 		Gui->SetListCtrlColumnWidths (HotkeyListCtrl, colPermilles);
 
 		RestoreValidatorBell = !wxTextValidator::IsSilent();
-		wxTextValidator::SetBellOnError (true);
+		wxTextValidator::SuppressBellOnError(true);
 		HotkeyTextCtrl->SetValidator (wxTextValidator (wxFILTER_INCLUDE_CHAR_LIST));
 
 		UpdateHotkeyButtons();
@@ -204,7 +204,7 @@ namespace TrueCrypt
 	PreferencesDialog::~PreferencesDialog ()
 	{
 		if (RestoreValidatorBell)
-			wxTextValidator::SetBellOnError (false);
+			wxTextValidator::SuppressBellOnError(false);
 	}
 
 	void PreferencesDialog::SelectPage (wxPanel *page)
